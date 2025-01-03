@@ -1,0 +1,51 @@
+﻿@using MyApiBook_1.UI.ViewModel
+@model List<BookCategoryWriterViewModel>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="section-header align-center">
+
+                <h2 class="section-title">Son Eklenen Kitaplarımız</h2>
+            </div>
+
+            <div class="product-list" data-aos="fade-up">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <figure class="product-style">
+                                    <img src="@item.ImageUrl" style="height:390px" alt="Books" class="product-item">
+                                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart">
+                                        Satın Al
+                                    </button>
+                                </figure>
+                                <figcaption>
+                                    <h3>@item.Title</h3>
+                                    <span>@item.WriterName</span>
+                                    <div class="item-price">@item.Price ₺</div>
+                                </figcaption>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="btn-wrap align-right">
+                <a href="#" class="btn-accent-arrow">
+                    Tüm Ürünlerimiz <i class="icon icon-ns-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

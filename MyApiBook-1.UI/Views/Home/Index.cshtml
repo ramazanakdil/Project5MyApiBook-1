@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div id="header-wrap">
+    @await Component.InvokeAsync("_HeaderVievComponents")
+
+</div>
+
+<section id="billboard">
+
+    @await Component.InvokeAsync("_FeatureViewComponents")
+
+</section>
+
+
+<section id="featured-books" class="py-5 my-5">
+    @await Component.InvokeAsync("_FeaturedViewComponents")
+</section>
+
+<section id="best-selling" class="leaf-pattern-overlay">
+    @await Component.InvokeAsync("_RandomBooksViewComponents")
+</section>
+
+<section id="popular-books" class="bookshelf py-5 my-5">
+    @await Component.InvokeAsync("_AllBooksWithCategoryViewComponents")
+</section>
+
+
+
+<section id="special-offer" class="bookshelf pb-5 mb-5">
+
+    @await Component.InvokeAsync("_WriterViewComponents")
+</section>
+
+
