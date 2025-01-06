@@ -60,6 +60,34 @@ namespace MyApiBook_1.BusinessLayer.Concrete
             return _bookDal.Random1Book();
         }
 
+        public List<AllProductsInformationViewModel> TPopulerBookAllCategories()
+        {
+            return _bookDal.PopulerBookAllCategories();
+        }
 
+        public List<AllProductsInformationViewModel> TPopulerBookRoman()
+        {
+            return _bookDal.PopulerBookRoman();
+        }
+
+        public List<AllProductsInformationViewModel> TPopulerBookEdebiyat()
+        {
+            return _bookDal.PopulerBookEdebiyat();
+        }
+
+        public List<AllProductsInformationViewModel> TPopulerBookTarih()
+        {
+            return _bookDal.PopulerBookTarih();
+        }
+
+        public List<AllProductsInformationViewModel> TPopulerBookKisiselGelisim()
+        {
+            return _bookDal.PopulerBookKisiselGelisim();
+        }
+
+        public List<AllProductsInformationViewModel> TPopulerBookCocuk()
+        {
+            return _bookDal.PopulerBookCocuk();
+        }
     }
 }

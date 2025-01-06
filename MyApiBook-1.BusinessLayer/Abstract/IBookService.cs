@@ -13,5 +13,11 @@ namespace MyApiBook_1.BusinessLayer.Abstract
     {
         List<BookCategoryWriterViewModel> TLast4BooksList();
         List<Random1BookViewModel> TRandom1Book();
+        List<AllProductsInformationViewModel> TPopulerBookAllCategories();
+        List<AllProductsInformationViewModel> TPopulerBookRoman();
+        List<AllProductsInformationViewModel> TPopulerBookEdebiyat();
+        List<AllProductsInformationViewModel> TPopulerBookTarih();
+        List<AllProductsInformationViewModel> TPopulerBookKisiselGelisim();
+        List<AllProductsInformationViewModel> TPopulerBookCocuk();
     }
 }

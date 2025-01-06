@@ -1,0 +1,32 @@
+﻿@model List<AllProductsInformationViewModel>
+
+<div id="kisisel-gelisim" data-tab-content>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+
+
+
+                <div class="product-item">
+                    <figure class="product-style">
+                        <img src="@item.ImageUrl" alt="Books" style="height:390px" class="product-item">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">
+                            Satın Al
+                        </button>
+                    </figure>
+                    <figcaption>
+                        <h3>@item.Title</h3>
+                        <h6>@item.WriterName</h6>
+                        <span>@item.CategoryName</span>
+                        <div class="item-price">@item.Price ₺</div>
+                    </figcaption>
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+
+</div>

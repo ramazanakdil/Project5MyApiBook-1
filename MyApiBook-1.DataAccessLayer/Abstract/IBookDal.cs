@@ -15,5 +15,11 @@ namespace MyApiBook_1.DataAccessLayer.Abstract
 
         List<Random1BookViewModel> Random1Book();
 
+        List<AllProductsInformationViewModel> PopulerBookAllCategories();
+        List<AllProductsInformationViewModel> PopulerBookRoman();
+        List<AllProductsInformationViewModel> PopulerBookEdebiyat();
+        List<AllProductsInformationViewModel> PopulerBookTarih();
+        List<AllProductsInformationViewModel> PopulerBookKisiselGelisim();
+        List<AllProductsInformationViewModel> PopulerBookCocuk();
     }
 }

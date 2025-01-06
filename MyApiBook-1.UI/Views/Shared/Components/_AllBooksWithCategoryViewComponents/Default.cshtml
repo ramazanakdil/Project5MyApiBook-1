@@ -1,51 +1,29 @@
-﻿
-
-<div class="container">
+﻿<div class="container">
     <div class="row">
         <div class="col-md-12">
-
             <div class="section-header align-center">
-                <div class="title">
-                    <span>Some quality items</span>
-                </div>
-                <h2 class="section-title">Popular Books</h2>
+                <h2 class="section-title">Popüler Kitaplar</h2>
             </div>
-
             <ul class="tabs">
               
-                    <li data-tab-target="#" class="tab"></li>
+                    <li data-tab-target="#tum-kitaplar" class="active tab">Tüm Kitaplar</li>
+                    <li data-tab-target="#roman" class="tab">Roman</li>
+                    <li data-tab-target="#edebiyat" class="tab">Edebiyat</li>
+                    <li data-tab-target="#tarih" class="tab">Tarih</li>
+                    <li data-tab-target="#kisisel-gelisim" class="tab">Kişisel Gelişim</li>
+                    <li data-tab-target="#cocuk-ve-gelisim" class="tab">Çocuk ve Gelişim</li>
                
             </ul>
 
             <div class="tab-content">
-        
-                    <div id="x" data-tab-content class="">
-                        <div class="row">
 
-                            <div class="col-md-3">
-                                
-                                    <div class="product-item">
-                                        <figure class="product-style">
-                                            <img src="x" alt="Books" class="product-item">
-                                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-                                                Satın Al
-                                            </button>
-                                        </figure>
-                                        <figcaption>
-                                            <h3>x</h3>
-                                            <span>x</span>
-                                            <div class="item-price">x ₺</div>
-                                        </figcaption>
-                                    </div>
-                               
-                            </div>
+                @await Component.InvokeAsync("_AllBooksViewComponents")
+                @await Component.InvokeAsync("_RomanViewComponents")
+                @await Component.InvokeAsync("_EdebiyatViewComponents")
+                @await Component.InvokeAsync("_TarihViewComponents")
+                @await Component.InvokeAsync("_KisiselGelisimViewComponents")
+                @await Component.InvokeAsync("_CocukGelisimViewComponents")
 
-
-
-                        </div>
-
-                    </div>
-              
 
             </div>
 
